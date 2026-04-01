@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVEG ENG | Engenharia de Alta Performance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Remova o scroll-behavior do CSS para deixar o JS controlar 100% */
+        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); }
+        .gradient-text { background: linear-gradient(90deg, #fbbf24, #f59e0b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    
+        /* Mantenha apenas o padding para não cobrir o título */
+        html {
+            scroll-padding-top: 80px; 
+        }
+    </style>
+
+    <title>Jean Costa | Engenharia Elétrica & Manutenção</title>
+    <meta name="description" content="Especialista em Cabines Primárias, Energia Solar e Laudos Técnicos. Atendimento industrial e comercial com foco em segurança e eficiência.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://seusite.com.br/">
+    <meta property="og:title" content="Jean Costa | Soluções em Engenharia Elétrica">
+    <meta property="og:description" content="Manutenção de Cabines Primárias e Energia Solar. Solicite seu orçamento agora.">
+    <meta property="og:image" content="https://seusite.com.br/assets/preview.jpg"> <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2906/2906206.png">
+
+</head>
+<body class="bg-slate-900 text-gray-100 overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 glass border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="#home" class="flex items-center">
+                <img src="./img/logo_horiz.png" alt="SVEG ENG Logo" class="h-12 w-auto object-contain hover:scale-105 transition-transform">
+                
+                </a>
+    
+            <button id="mobile-menu-btn" class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+    
+            <div class="hidden md:flex space-x-8 font-medium items-center">
+                <a href="#home" class="hover:text-yellow-500 transition-colors">Home</a>
+                <a href="#servicos" class="hover:text-yellow-500 transition-colors">Serviços</a>
+                <a href="#contato" class="bg-yellow-500 text-slate-900 px-6 py-2 rounded-full font-bold transition-all duration-300 hover:bg-yellow-400">
+                    Orçamento
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex items-center relative pt-20 overflow-hidden">
+    
+        <div class="absolute inset-0 z-0">
+            <img src="./img/quadro.jpg" alt="Background Engenharia" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-slate-900/70"></div>
+        </div>
+    
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 relative z-10">
+            <div data-aos="fade-right">
+                <span class="text-yellow-500 font-bold tracking-widest uppercase text-sm">Engenharia e Tecnologia</span>
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mt-4">
+                    Energia que <br><span class="gradient-text">move o futuro.</span>
+                </h1>
+                <p class="text-gray-100 mt-6 text-lg max-w-md">
+                    Soluções integradas em baixa e alta tensão com a precisão que seu projeto exige.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-10">
+                    <a href="#contato" class="bg-yellow-500 text-slate-900 px-8 py-4 rounded-xl font-bold hover:bg-yellow-400 transition-all text-center">
+                        Começar Projeto
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="absolute top-1/4 right-0 w-96 h-96 bg-blue-500/20 rounded-full blur-[120px] animate-pulse z-5"></div>
+    </section>
+
+    <section class="py-12 border-y border-white/5 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="text-center" data-aos="zoom-in" data-aos-delay="100">
+                <div class="text-4xl font-bold text-yellow-500">+500</div>
+                <div class="text-sm text-gray-500 uppercase">Obras Entregues</div>
+            </div>
+            <div class="text-center" data-aos="zoom-in" data-aos-delay="200">
+                <div class="text-4xl font-bold text-yellow-500">15</div>
+                <div class="text-sm text-gray-500 uppercase">Anos de Exp.</div>
+            </div>
+            <div class="text-center" data-aos="zoom-in" data-aos-delay="300">
+                <div class="text-4xl font-bold text-yellow-500">100%</div>
+                <div class="text-sm text-gray-500 uppercase">Segurança</div>
+            </div>
+            <div class="text-center" data-aos="zoom-in" data-aos-delay="400">
+                <div class="text-4xl font-bold text-yellow-500">24h</div>
+                <div class="text-sm text-gray-500 uppercase">Suporte Técnico</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-24 bg-slate-800/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12" data-aos="fade-up">Nossas <span class="text-yellow-500">Especialidades</span></h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div onclick="openModal('cabine')" class="group p-0 rounded-3xl bg-slate-800 border border-white/5 overflow-hidden hover:border-yellow-500/50 transition-all duration-500 cursor-pointer shadow-2xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&q=80&w=600" alt="Subestação Elétrica" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-60">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-800 to-transparent"></div>
+                        <div class="absolute bottom-4 left-6 w-12 h-12 bg-yellow-500 rounded-xl flex items-center justify-center text-slate-900 text-xl">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Cabines Primárias</h3>
+                        <p class="text-gray-400 text-sm mb-4">Alta tensão: Manutenção de transformadores e subestações.</p>
+                        <span class="text-yellow-500 text-xs font-bold uppercase tracking-widest group-hover:underline">Ver detalhes técnicos +</span>
+                    </div>
+                </div>
+    
+                <div onclick="openModal('solar')" class="group p-0 rounded-3xl bg-slate-800 border border-white/5 overflow-hidden hover:border-yellow-500/50 transition-all duration-500 cursor-pointer shadow-2xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&q=80&w=600" alt="Energia Solar" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-60">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-800 to-transparent"></div>
+                        <div class="absolute bottom-4 left-6 w-12 h-12 bg-yellow-500 rounded-xl flex items-center justify-center text-slate-900 text-xl">
+                            <i class="fas fa-solar-panel"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Energia Solar</h3>
+                        <p class="text-gray-400 text-sm mb-4">Economia inteligente com projetos fotovoltaicos personalizados.</p>
+                        <span class="text-yellow-500 text-xs font-bold uppercase tracking-widest group-hover:underline">Ver detalhes técnicos +</span>
+                    </div>
+                </div>
+    
+                <div onclick="openModal('laudos')" class="group p-0 rounded-3xl bg-slate-800 border border-white/5 overflow-hidden hover:border-yellow-500/50 transition-all duration-500 cursor-pointer shadow-2xl" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=600" alt="Diagrama Elétrico" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-60">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-800 to-transparent"></div>
+                        <div class="absolute bottom-4 left-6 w-12 h-12 bg-yellow-500 rounded-xl flex items-center justify-center text-slate-900 text-xl">
+                            <i class="fas fa-drafting-compass"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Diagramas e Laudos</h3>
+                        <p class="text-gray-400 text-sm mb-4">Esquemas unifilares, prontuários NR-10 e laudos de SPDA.</p>
+                        <span class="text-yellow-500 text-xs font-bold uppercase tracking-widest group-hover:underline">Ver detalhes técnicos +</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-slate-900/50 border-y border-white/5 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <p class="text-center text-gray-500 text-sm font-medium mb-12 uppercase tracking-widest">Empresas que confiam em nosso trabalho</p>
+            
+            <div class="relative flex">
+                <div class="animate-scroll">
+                    
+                    <div class="logo-wrapper"><img src="./img/renner.png" class="logo-img" alt="Renner"></div>
+                    <div class="logo-wrapper"><img src="./img/faaco.png" class="logo-img" alt="FA-AÇO"></div>
+                    <div class="logo-wrapper"><img src="./img/pernambucanas.png" class="logo-img" alt="Pernambucanas"></div>
+                    <div class="logo-wrapper"><img src="./img/alinc.png" class="logo-img" alt="Alinc"></div>
+                    <div class="logo-wrapper"><img src="./img/republique.png" class="logo-img" alt="Republique"></div>
+    
+                    <div class="logo-wrapper"><img src="./img/renner.png" class="logo-img" alt="Renner"></div>
+                    <div class="logo-wrapper"><img src="./img/faaco.png" class="logo-img" alt="FA-AÇO"></div>
+                    <div class="logo-wrapper"><img src="./img/pernambucanas.png" class="logo-img" alt="Pernambucanas"></div>
+                    <div class="logo-wrapper"><img src="./img/alinc.png" class="logo-img" alt="Alinc"></div>
+                    <div class="logo-wrapper"><img src="./img/republique.png" class="logo-img" alt="Republique"></div>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+    
+        .animate-scroll {
+            display: flex;
+            width: max-content;
+            animation: scroll 30s linear infinite;
+            align-items: center; /* Alinha todas as logos pelo centro horizontal */
+        }
+    
+        /* MOLDURA PADRONIZADA */
+        .logo-wrapper {
+            flex-shrink: 0;
+            width: 220px; /* Espaço horizontal reservado para cada marca */
+            height: 100px; /* Altura máxima da linha de marcas */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+        }
+    
+        /* IMAGEM PADRONIZADA */
+        .logo-img {
+            max-height: 50px; /* Altura máxima que qualquer logo pode ter */
+            max-width: 160px; /* Largura máxima que qualquer logo pode ter */
+            width: auto;
+            height: auto;
+            object-contain: contain;
+            filter: grayscale(100%) brightness(1.5);
+            opacity: 0.5;
+            transition: all 0.4s ease;
+        }
+    
+        .logo-img:hover {
+            filter: grayscale(0%) brightness(1);
+            opacity: 1;
+            transform: scale(1.1);
+        }
+    
+        .animate-scroll:hover {
+            animation-play-state: paused;
+        }
+    </style>
+
+    <div id="service-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4">
+        <div onclick="closeModal()" class="absolute inset-0 bg-slate-950/90 backdrop-blur-sm"></div>
+        <div class="glass w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-[32px] border border-white/10 relative z-10 p-8 md:p-12 shadow-2xl">
+            <button onclick="closeModal()" class="absolute top-6 right-6 text-gray-400 hover:text-white text-2xl">
+                <i class="fas fa-times"></i>
+            </button>
+            <div id="modal-content">
+                </div>
+        </div>
+    </div>
+
+    <section id="contato" class="py-24 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-6 relative z-10">
+            <div class="glass p-8 md:p-12 rounded-[40px] border border-white/10" data-aos="zoom-in-up">
+                <div class="text-center mb-10">
+                    <h2 class="text-4xl font-bold">Solicite seu <span class="text-yellow-500">Orçamento</span></h2>
+                    <p class="text-gray-400 mt-2">Resposta rápida via WhatsApp ou E-mail.</p>
+                </div>
+                
+                <form id="contact-form" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-sm font-medium text-gray-400">Nome</label>
+                            <input type="text" id="name" required class="w-full bg-slate-900 border border-white/10 rounded-2xl p-4 focus:border-yellow-500 outline-none transition text-white">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-sm font-medium text-gray-400">WhatsApp</label>
+                            <input type="tel" id="phone" placeholder="(11) 99999-9999" class="w-full bg-slate-900 border border-white/10 rounded-2xl p-4 focus:border-yellow-500 outline-none transition text-white">
+                        </div>
+                    </div>
+                
+                    <div class="space-y-2">
+                        <label class="text-sm font-medium text-gray-400">O que você precisa?</label>
+                        <div class="relative">
+                            <select id="subject" required class="w-full bg-slate-900 border border-white/10 rounded-2xl p-4 focus:border-yellow-500 outline-none transition text-white appearance-none cursor-pointer">
+                                <option value="" disabled selected>Selecione uma opção</option>
+                                <option value="Orcamento">Solicitar Orçamento</option>
+                                <option value="Duvida">Tirar uma Dúvida</option>
+                                <option value="Manutencao">Agendar Manutenção</option>
+                                <option value="Outros">Outros Assuntos</option>
+                            </select>
+                            <div class="absolute inset-y-0 right-4 flex items-center pointer-events-none text-gray-500">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div id="work-type-container" class="space-y-2 hidden transition-all duration-500">
+                        <label class="text-sm font-medium text-gray-400">Qual o tipo de serviço?</label>
+                        <div class="relative">
+                            <select id="work-type" class="w-full bg-slate-900 border border-white/10 rounded-2xl p-4 focus:border-yellow-500 outline-none transition text-white appearance-none cursor-pointer border-yellow-500/30">
+                                <option value="" disabled selected>Escolha o serviço técnico</option>
+                                <option value="Cabine Primaria">Cabine Primária</option>
+                                <option value="Energia Solar">Energia Fotovoltaica</option>
+                                <option value="Instalacao Industrial">Instalação Industrial</option>
+                                <option value="Laudos/ART">Laudos Técnicos / ART</option>
+                            </select>
+                            <div class="absolute inset-y-0 right-4 flex items-center pointer-events-none text-gray-500">
+                                <i class="fas fa-bolt text-yellow-500 text-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="space-y-2">
+                        <label class="text-sm font-medium text-gray-400">Mensagem</label>
+                        <textarea id="message" rows="4" class="w-full bg-slate-900 border border-white/10 rounded-2xl p-4 focus:border-yellow-500 outline-none transition text-white"></textarea>
+                    </div>
+                
+                    <button type="submit" class="w-full bg-yellow-500 text-slate-900 font-black py-5 rounded-2xl hover:bg-yellow-400 transform hover:scale-[1.02] active:scale-95 transition-all shadow-xl shadow-yellow-500/20 uppercase tracking-widest">
+                        Enviar Proposta Agora
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 pt-16 pb-8 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                
+                <div class="space-y-6">
+                    <div class="text-2xl font-black tracking-tighter">SVEG<span class="text-yellow-500">ENG</span></div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Excelência em engenharia elétrica e soluções sustentáveis. Garantindo segurança e eficiência para o seu patrimônio.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-yellow-500 hover:text-slate-900 transition-all">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-yellow-500 hover:text-slate-900 transition-all">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-yellow-500 hover:text-slate-900 transition-all">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase text-xs tracking-widest">Segurança</h4>
+                    <ul class="space-y-4 text-gray-400 text-sm">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-yellow-500 mr-2"></i> NR-10 Certificado</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-yellow-500 mr-2"></i> NR-35 Trabalho em Altura</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-yellow-500 mr-2"></i> CREA Ativo</li>
+                        <li class="flex items-center"><i class="fas fa-shield-alt text-yellow-500 mr-2"></i> Seguro de Obras</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase text-xs tracking-widest">Localização</h4>
+                    <p class="text-gray-400 text-sm mb-4">
+                        Rua Martinique, 3, Vila Recanto Paulistano<br>
+                        Itapevi – São Paulo/SP
+                    </p>
+                    <p class="text-yellow-500 font-bold text-sm">(11) 98179-0566</p>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-white/5 flex flex-col md:row justify-between items-center text-gray-500 text-xs gap-4">
+                <div class="text-center md:text-left">
+                    <p>&copy; 2026 SVEG ENG. Todos os direitos reservados.</p>
+                </div>
+                <div class="flex items-center">
+                    <span>Desenvolvido </i> por </span>
+                    <a href="#" class="text-white font-bold hover:text-yellow-500 ml-1 transition">Jean Costa</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
