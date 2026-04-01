@@ -11,11 +11,18 @@
         /* Remova o scroll-behavior do CSS para deixar o JS controlar 100% */
         .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); }
         .gradient-text { background: linear-gradient(90deg, #fbbf24, #f59e0b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    
-        /* Mantenha apenas o padding para não cobrir o título */
+
+        /* Força o comportamento smooth em nível de documento */
         html {
-            scroll-padding-top: 80px; 
+            scroll-behavior: smooth !important;
         }
+
+        /* Remove qualquer trava de overflow que possa estar impedindo o JS de calcular o scroll */
+        body {
+            overflow-x: hidden;
+            height: auto;
+        }
+
     </style>
 
     <title>Jean Costa | Engenharia Elétrica & Manutenção</title>
@@ -33,16 +40,19 @@
     <nav class="fixed w-full z-50 glass border-b border-white/10">
         <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
             <a href="#home" class="flex items-center">
-                <img src="./img/logo_horiz.png" alt="SVEG ENG Logo" class="h-12 w-auto object-contain hover:scale-105 transition-transform">
+                <img src="./img/logo_horiz.png" alt="SVEG ENG Logo" class="h-12 w-auto object-contain">
+            </a>
+    
+            <button id="mobile-menu-btn" class="md:hidden text-2xl text-white focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+    
+            <div id="nav-menu" class="hidden md:flex md:flex-row md:static md:w-auto md:bg-transparent md:p-0 md:border-none
+                absolute top-20 left-0 w-full bg-slate-900/95 backdrop-blur-lg p-8 flex-col gap-6 border-b border-white/10 items-center text-center">
                 
-                </a>
-    
-            <button id="mobile-menu-btn" class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
-    
-            <div class="hidden md:flex space-x-8 font-medium items-center">
                 <a href="#home" class="hover:text-yellow-500 transition-colors">Home</a>
                 <a href="#servicos" class="hover:text-yellow-500 transition-colors">Serviços</a>
-                <a href="#contato" class="bg-yellow-500 text-slate-900 px-6 py-2 rounded-full font-bold transition-all duration-300 hover:bg-yellow-400">
+                <a href="#contato" class="bg-yellow-500 text-slate-900 px-6 py-2 rounded-full font-bold hover:bg-yellow-400 transition-all">
                     Orçamento
                 </a>
             </div>
